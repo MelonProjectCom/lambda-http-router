@@ -16,7 +16,9 @@ Project goals are:
 # Getting started
 
 ```java
-import com.sil.serverless.lambda.bind.annotation.*;
+import com.melon.project.serverless.lambda.bind.annotation.Body;
+import com.melon.project.serverless.lambda.bind.annotation.LambdaController;
+import com.melon.project.serverless.lambda.bind.annotation.PathPostMapping;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -24,14 +26,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Example {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Example.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Example.class, args);
+    }
 
-	@PathPostMapping("/example/test")
-	public String example(@Body String body){
-		return "Hello World! - body: " + body;
-	}
+    @PathPostMapping("/example/test")
+    public String example(@Body String body) {
+        return "Hello World! - body: " + body;
+    }
 }
 
 ```
