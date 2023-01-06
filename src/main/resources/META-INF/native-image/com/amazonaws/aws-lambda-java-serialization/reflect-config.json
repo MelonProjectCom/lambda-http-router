@@ -1,0 +1,8 @@
+[
+  {
+    "name": "org.joda.time.DateTime",
+    "allDeclaredFields": true,
+    "allDeclaredMethods": true,
+    "allDeclaredConstructors": true
+  }
+]
