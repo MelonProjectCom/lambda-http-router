@@ -1,5 +1,23 @@
 [
   {
+    "name": "com.amazonaws.lambda.thirdparty.com.fasterxml.jackson.databind.ext.Java7SupportImpl",
+    "allDeclaredFields": true,
+    "allDeclaredMethods": true,
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "com.amazonaws.lambda.thirdparty.com.fasterxml.jackson.databind.ext.Java7Handlers",
+    "allDeclaredFields": true,
+    "allDeclaredMethods": true,
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "com.amazonaws.lambda.thirdparty.com.fasterxml.jackson.databind.ext.Java7HandlersImpl",
+    "allDeclaredFields": true,
+    "allDeclaredMethods": true,
+    "allDeclaredConstructors": true
+  },
+  {
     "name": "org.joda.time.DateTime",
     "allDeclaredFields": true,
     "allDeclaredMethods": true,
