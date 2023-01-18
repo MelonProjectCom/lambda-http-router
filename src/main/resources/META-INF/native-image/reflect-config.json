@@ -1,26 +1,26 @@
 [
   {
-    "name": "com.sil.serverless.lambda.events.ApiGatewayRequestEvent",
+    "name": "com.melon.project.serverless.lambda.events.ApiGatewayRequestEvent",
     "allDeclaredFields": true,
     "allDeclaredMethods": true,
     "allDeclaredConstructors": true
   },
   {
-    "name": "com.sil.serverless.lambda.events.AlbRequestEvent",
-    "allDeclaredFields": true,
-    "allDeclaredMethods": true,
-    "allDeclaredConstructors": true
-  },
-
-  {
-    "name": "com.sil.serverless.lambda.entrypoint.ApiGatewayRequestHandler",
+    "name": "com.melon.project.serverless.lambda.events.AlbRequestEvent",
     "allDeclaredFields": true,
     "allDeclaredMethods": true,
     "allDeclaredConstructors": true
   },
 
   {
-    "name": "com.sil.serverless.lambda.entrypoint.AlbRequestHandler",
+    "name": "com.melon.project.serverless.lambda.entrypoint.ApiGatewayRequestHandler",
+    "allDeclaredFields": true,
+    "allDeclaredMethods": true,
+    "allDeclaredConstructors": true
+  },
+
+  {
+    "name": "com.melon.project.serverless.lambda.entrypoint.AlbRequestHandler",
     "allDeclaredFields": true,
     "allDeclaredMethods": true,
     "allDeclaredConstructors": true
