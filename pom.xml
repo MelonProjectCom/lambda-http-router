@@ -8,17 +8,27 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.melon.project.serverless</groupId>
+	<groupId>com.melon-project</groupId>
 	<artifactId>lambda-http-router</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>AWS Lambda router</name>
-	<description>Proxy to spread request to handlers based on path</description>
+	<name>lambda-http-router</name>
+	<description>Proxy to spread AWS lambda request to handlers based on path</description>
+	<url>https://github.com/MelonProjectCom/lambda-http-router</url>
 	<licenses>
 		<license>
 			<name>The Apache License, Version 2.0</name>
 			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 		</license>
 	</licenses>
+	<developers>
+		<developer>
+			<name>Albert Sikorski</name>
+			<email>albert.sikor@gmail.com</email>
+		</developer>
+	</developers>
+	<scm>
+		<url>https://github.com/MelonProjectCom/lambda-http-router</url>
+	</scm>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -64,4 +74,43 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/MelonProjectCom/lambda-http-router</url>
+		</repository>
+	</distributionManagement>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>
