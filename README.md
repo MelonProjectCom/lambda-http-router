@@ -1,6 +1,11 @@
 # aws-lambda-router
 
 
+> **INFO**: Because of missing official support for Java 17 in AWS Lambda there are two options 
+> to use this library:
+> - Native image
+> - Build your own environment with java 17 inside
+
 # Project idea
 
 Simplify development process for Spring boot projects. 
@@ -14,6 +19,8 @@ Project goals are:
  - Reduce the amount of code 
 
 # Getting started
+
+> **Examples**: https://github.com/MelonProjectCom/lambda-http-router-examples
 
 ```java
 import com.melon.project.serverless.lambda.bind.annotation.Body;
@@ -37,8 +44,38 @@ public class Example {
 }
 
 ```
+## Configuration
+
+### API Gateway
+
+Set property (Optional)
+```yaml
+lambda:
+  router:
+    mode: API_GATEWAY
+```
+
+Handler Configuration - AWS Lambda function:
+```markdown
+com.melon.project.serverless.lambda.entrypoint.ApiGatewayRequestHandler::handleRequest
+```
+
+### Application Load Balancer
+
+Set property
+```yaml
+lambda:
+  router:
+    mode: ALB
+```
+
+Handler Configuration - AWS Lambda function:
+```markdown
+com.melon.project.serverless.lambda.entrypoint.AlbRequestHandler::handleRequest
+```
 
 # Pros and restrictions
+
 ## Pros
  - Simplifies infrastructure - single/few lambda functions for all endpoints instead of single per each endpoint
  - Simplifies development process - single code/repository for many endpoints
